@@ -1,0 +1,37 @@
+---------------------------------------------------------------------
+Visualisateur de trafic réseau (2022-2023)                           |
+                                                                     |
+Projet de IDJER Samy Remy  21208501 et Mussard Wassim 28706762       |
+Réseaux LU3IN033 Groupe 2                                            |
+                                                                     |
+---------------------------------------------------------------------  
+
+Le code a été programmé en python  (version : Python 3.10.6) sur Linux.
+
+Prérequis:
+	- installer python3 
+	- installer la bibliothèque Tkinter:
+		. MacOS: brew install python-tk
+		. Ubuntu: sudo apt-get install python-tk
+		. Arch: sudo pacman -S python-tk
+		. Windows: Avec l'installer officiel de Python
+
+	   Si vous êtes sur Windows est que vous rencontrez un problème du type "_tkinter.TclError: couldn't connect to display" , vous pouvez installer :
+	   											- "Xming X server for Windows" (disponible sur sourceforge.net) .
+                                                - puis ajouter export DISPLAY=:0; au  .bashrc .
+
+Execution du programme:
+	pour MAC OS et Linux : 
+			- se mettre dans le repertoire du projet 
+			- make (qui va charger par défaut le fichier [trames.txt] )
+			- make fichier=[nomdufichier.txt] ( mettre à la place [nomdufichier.txt] le fichier.txt que vous voulez) .
+	Sinon pour Windows ( marche aussi pour MAC OS et Linux)		
+			- python3 main.py [fichier.txt]
+
+[fichier.txt] est un parametre optionel, donc si vous ne mettez rien , le programme va par défaut  utiliser le fichier [trames.txt] dans le même répertoire. Si vous souhaitez essayer avec un autre fichier texte, il suffira juste de le passer en argument. 
+ 
+
+Output:
+	- L'execution du programme  va générer  un fichier [output.txt] avec l'analyse des toutes le trames du fichier prit  en question.
+	
+ATTENTION: le fichier [output.txt] sera  remplacé aprés chaque execution! Ou créé s'il n'existe pas dans le répertoire.
